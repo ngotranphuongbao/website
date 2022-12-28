@@ -1,0 +1,95 @@
+/* PC */
+@media (min-width: 1024px) {
+
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    #search {
+        display: none;
+    }
+
+    #mobile-menu {
+        display: inline-block; 
+    }
+
+    #header {
+        overflow: hidden;
+    }
+
+    #header #nav-list > .nav {
+        display: block;
+    }
+
+    #header #nav-list > .nav:last-child {
+        display: none; 
+    }
+
+    #nav-list > .nav > a {
+        display: block;
+    }
+
+    #header #nav-list {
+        display: block;
+    }
+
+    #header #nav-list > .nav:first-child {
+        display: inline-block;
+    }
+
+    .member-list.row {
+        display: block;
+    }
+
+    .member.col-3 {
+        display: block;
+        width: 100%;
+    }
+
+    .place-list {
+        display: block; 
+        margin-left: 0px;
+        margin-right: 0px; 
+    }
+
+    .place {
+        display: block; 
+        width: 100%;
+        margin: 0px 0px; 
+        margin-bottom: 16px;
+    }
+
+    #contact-list {
+        display: block;
+    }
+
+    .band-contact {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .fan-contact {
+        width: 100%;
+    }
+
+    .fan-contact .row {
+        display: block; 
+    }
+
+    .fan-contact .row > input {
+        width: 100%;
+        margin: 0px 0px; 
+    }
+
+    .send {
+        margin-right: 0px;
+        border: none;
+    }
+
+
+}

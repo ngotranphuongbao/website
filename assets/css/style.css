@@ -1,0 +1,335 @@
+* {
+    padding: 0px;
+    margin: 0px; 
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* common part */
+.text-white {
+    color: white; 
+}
+
+.row {
+    display: flex;
+}
+
+.col-3 {
+    display: inline-block; 
+    width: calc(100% / 3);
+}
+
+.col-2 {
+    display: inline-block;
+    width: 50%;
+}
+
+.col-1 {
+    display: inline-block; 
+    width: 100%;
+}
+/* main part */
+#header {
+    background-color: black;
+    position: fixed;
+    height: 46.5px;
+    top: 0px; 
+    left: 0px;
+    right: 0px; 
+    z-index: 1;
+    max-width: 100%;
+}
+
+#header #nav-list {
+    display: inline-block; 
+}
+
+
+#header #nav-list > .nav {
+    display: inline-block;
+    padding: 12px 24px;
+    position: relative; 
+}
+
+#nav-list > .nav > a {
+    color: white; 
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#nav-list > .nav:hover {
+    background-color: grey;
+}
+
+#nav-list > .nav:hover > a {
+    color: black; 
+}
+
+#nav-list > .nav > #subnav-list {
+    display: none;
+    background-color: white;
+    position: absolute;
+    top: 100%; 
+    left: 0px; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+
+.nav > #subnav-list > .subnav {
+    display: block;
+    padding: 8px 16px; 
+    cursor: pointer;
+}
+
+#nav-list > .nav:hover > #subnav-list {
+    display: block;
+}
+
+#subnav-list > .subnav:hover {
+    background-color: grey;
+}
+
+#search {
+    display: inline-block;
+    padding: 12px 24px; 
+    float: right; 
+    color: white; 
+    cursor: pointer;
+}
+
+#search:hover {
+    background-color: red;
+}
+
+#mobile-menu {
+    display: none;
+    padding: 12px 24px; 
+    float: right; 
+    color: white;
+    position: absolute;
+    top: 0px; 
+    right: 0px;
+}
+
+#slider {
+    margin-top: 46.5px; 
+    padding-top: 50%; 
+    background: url(https://www.w3schools.com/w3images/chicago.jpg) top center / cover no-repeat;
+    position: relative;
+    display: flex; 
+    justify-content: center;
+}
+
+#slider-caption {
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    padding: 32px 16px; 
+    color: white; 
+}
+
+#slider-caption > h3 {
+    margin: 10px 0px; 
+    font-weight: 400;
+}
+
+#slider-caption > p {
+    margin: 15px 0px; 
+}
+
+.main-content {
+    width: 800px;
+    max-width: 100%;
+    margin: auto; 
+    padding: 64px 16px; 
+}
+
+.content-name {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.content-subname {
+    margin: 15px 0px; 
+    opacity: 0.6;
+    font-style: italic;
+    text-align: center;
+}
+
+#about-band {
+    margin: 15px 0px; 
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.member-list {
+    padding: 32px 0px; 
+}
+
+.member {
+    text-align: center;
+}
+
+.member__name {
+    margin: 15px 0px; 
+}
+
+.member__image {
+    width: 60%;
+    margin-bottom: 16px;
+}
+
+#tour-dates {
+    background-color: black;
+}
+
+#schedule {
+    margin-top: 33.4px;
+    background-color: white;
+}
+
+#schedule .month {
+    display: block;
+    padding: 8px 16px; 
+    border-bottom: 1px solid #ddd;
+    color: #757575; 
+}
+
+.sold-out {
+    display: inline-block; 
+    background-color: red;
+    padding: 0px 8px; 
+    margin-left: 16px;
+}
+
+.w3-badge {
+    float: right; 
+    margin-right: 16px;
+}
+
+.place-list {
+    margin-top: 33.4px;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.place {
+    margin: 0px 8px; 
+}
+
+.place__image {
+    width: 100%;
+}
+
+.place__image:hover {
+    opacity: 0.6;
+}
+
+.place__infor {
+    padding: 0.15px 16px; 
+    background-color: white;
+}
+
+.place__infor .city-name {
+    margin: 15px 0px; 
+}
+
+.place__infor .date {
+    margin: 15px 0px; 
+    opacity: 0.6;
+}
+
+.place__infor .describe {
+    margin: 15px 0px; 
+    line-height: 1.5;
+}
+
+.place__infor .buy-button {
+    display: inline-block;
+    background-color: black;
+    padding: 8px 16px; 
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+.buy-button:hover {
+    background-color: grey;
+    color: black; 
+}
+
+#contact-list {
+    padding: 32px 0px; 
+}
+
+.band-contact > li {
+    display: block; 
+}
+
+.fan-contact .row {
+    margin-bottom: 8px;
+}
+
+.fan-contact .row > input {
+    margin: 0px 8px;  
+    padding: 8px; 
+    border: 1px solid #ccc;
+}
+
+.send {
+    display: inline-block;
+    background-color: black;
+    text-transform: uppercase;
+    color: white;
+    padding: 8px 16px; 
+    margin-top: 8px;
+    margin-right: 8px; 
+    margin-bottom: 16px;
+    float: right; 
+    cursor: pointer;
+}
+
+.send:hover {
+    background-color: grey;
+    color: black; 
+}
+
+#map {
+    padding-top: 56%; 
+    background: url(https://www.w3schools.com/w3images/map.jpg) top center / cover no-repeat;
+}
+
+.address-icon {
+    margin-right: 8px;
+}
+
+.social-list {
+    margin-top: 64px;
+    text-align: center;
+}
+
+.social-list > i {
+    font-size: 25px;
+    margin: 0px 2px; 
+    
+}
+
+.power-by {
+    margin-top: 15px; 
+    margin-bottom: 79px;
+    opacity: 0.6;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
